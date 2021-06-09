@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import { useHistory } from 'react-router';
 
 export default function HomePage() {
@@ -11,6 +13,12 @@ export default function HomePage() {
         history.push(path);
     }
 
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+            Disabled.  Will implement at a later date.
+        </Tooltip>
+    );
+
     return (
         <div>
             <h1 style={{
@@ -21,8 +29,7 @@ export default function HomePage() {
                 id="berries"
                 onClick={handleClick}
             >
-               {/* <Link to='/berries'>Pokemon Berries</Link> */}
-               Pokemon Berries
+                Pokemon Berries
             </Button>{' '}
             <Button
                 variant="dark"
@@ -31,24 +38,48 @@ export default function HomePage() {
             >
                 Pokemon Creatures
             </Button>{' '}
-            <Button
-                variant="dark"
-                id="items"
-                onClick={handleClick}
+
+            {/* These are disabled until functions can be implemented*/}
+            <OverlayTrigger
+                placement="right"
+                delay={{ show: 250, hide: 250 }}
+                overlay={renderTooltip}
             >
-                Pokemon Items
+                <Button
+                    variant="dark"
+                    id="items"
+                    onClick={handleClick}
+                    disabled
+                >
+                    Pokemon Items
             </Button>{' '}
-            <Button
-                variant="dark"
-                id="evolutions"
-                onClick={handleClick}
-            >Pokemon Evolution
+            </OverlayTrigger>
+            <OverlayTrigger
+                placement="right"
+                delay={{ show: 250, hide: 250 }}
+                overlay={renderTooltip}
+            >
+                <Button
+                    variant="dark"
+                    id="evolutions"
+                    onClick={handleClick}
+                    disabled
+                >Pokemon Evolution
             </Button>{' '}
-            <Button
-                variant="dark"
-                id="moves"
-                onClick={handleClick}
-            >Pokemon Moves</Button>{' '}
+            </OverlayTrigger>
+            <OverlayTrigger
+                placement="right"
+                delay={{ show: 250, hide: 250 }}
+                overlay={renderTooltip}
+            >
+                <Button
+                    variant="dark"
+                    id="moves"
+                    onClick={handleClick}
+                    disabled
+                >Pokemon Moves
+            </Button>{' '}
+            </OverlayTrigger>
         </div>
     )
 }
