@@ -33,7 +33,10 @@ export default function CreatureDetails() {
                 )
             })
         }
+
+        return abilities;
     }
+    
     return (
         <div>
             <h3>{creatureDetails.name}</h3>
