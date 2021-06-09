@@ -17,6 +17,13 @@ function NavBar() {
         justify
         variant="tabs"
       >
+        <div>
+          <Link to={`/`}>
+            <Button variant="outline-dark" size="sm">
+              Return Home
+            </Button>
+          </Link>
+        </div>
       </Nav>
     </Navbar>
   )

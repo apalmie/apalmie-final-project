@@ -4,6 +4,8 @@ import NavBar from './NavBar';
 import Homepage from './Homepage';
 import Berries from './Berries/Berries';
 import BerryDetails from './Berries/BerryDetails';
+import Creatures from './Creatures/Creatures';
+import CreatureDetails from './Creatures/CreatureDetails';
 
 
 function App() {
@@ -15,8 +17,8 @@ function App() {
           <Route exact path='/' component={Homepage}/>
           <Route path='/berries' component={Berries} />
           <Route path='/berry/:id' component={BerryDetails}/>
-          <Route path='/creatures' />
-          <Route path='/creature/:id' />
+          <Route path='/creatures' component={Creatures}/>
+          <Route path='/creature/:id' component={CreatureDetails}/>
           <Route path='/items' />
           <Route path='/item/:id' />
           <Route path='/evolutions' />
