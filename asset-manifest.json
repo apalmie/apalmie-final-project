@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/apalmie-final-project/static/css/main.dfad3a32.chunk.css",
-    "main.js": "/apalmie-final-project/static/js/main.05f77210.chunk.js",
-    "main.js.map": "/apalmie-final-project/static/js/main.05f77210.chunk.js.map",
+    "main.js": "/apalmie-final-project/static/js/main.58a9b6c0.chunk.js",
+    "main.js.map": "/apalmie-final-project/static/js/main.58a9b6c0.chunk.js.map",
     "runtime-main.js": "/apalmie-final-project/static/js/runtime-main.51501449.js",
     "runtime-main.js.map": "/apalmie-final-project/static/js/runtime-main.51501449.js.map",
     "static/css/2.4f8976c6.chunk.css": "/apalmie-final-project/static/css/2.4f8976c6.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.4f8976c6.chunk.css",
     "static/js/2.7fa5d28b.chunk.js",
     "static/css/main.dfad3a32.chunk.css",
-    "static/js/main.05f77210.chunk.js"
+    "static/js/main.58a9b6c0.chunk.js"
   ]
 }
