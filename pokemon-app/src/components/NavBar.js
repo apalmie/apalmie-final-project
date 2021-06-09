@@ -1,4 +1,5 @@
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import banner from '../images/banner_logo.png';
 
 function NavBar() {
@@ -20,7 +21,7 @@ function NavBar() {
         <div>
           <Link to={`/`}>
             <Button variant="outline-dark" size="sm">
-              Return Home
+              Home
             </Button>
           </Link>
         </div>

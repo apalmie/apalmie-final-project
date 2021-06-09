@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { isEmpty } from 'lodash';
 
 export default function CreatureDetails() {
 
