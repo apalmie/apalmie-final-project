@@ -39,7 +39,6 @@ export default function HomePage() {
                 Pokemon Creatures
             </Button>{' '}
 
-            {/* These are disabled until functions can be implemented*/}
             <OverlayTrigger
                 placement="right"
                 delay={{ show: 250, hide: 250 }}
